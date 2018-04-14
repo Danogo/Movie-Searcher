@@ -1,0 +1,6 @@
+<h1>There are film you were searching for: </h1>
+<% data['Search'].forEach((el) => { %>
+  <li><%= el['Title'] %> - <%= el['Year'] %></li>
+<% }) %>
+
+<a href="/"><button type="button">Search Again!</button></a>
